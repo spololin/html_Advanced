@@ -30,12 +30,12 @@
         <div class="main-content">
             <div class="top-poster"></div>
             
-            <div class="intro">
+            <section class="intro">
                 <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
                 <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-            </div>    
+            </section>    
             
-            <div class="reasons">
+            <section class="reasons">
                 <div class="column-text">
                     <div class="reason-title">Настоящий<br> городок</div>
                     <div class="number-reason">- №1 -</div>
@@ -44,9 +44,9 @@
                 <div class="column-photo">
                     <img src="http://placehold.it/150x100" alt="Фото города" width="800" height="256">
                 </div>
-            </div>
+            </section>
             
-            <div class="advices">
+            <section class="advices">
                 <div class="column-text">
                     <div class="title-advice icon-house">Жилье</div>
                     <div class="slogan-advice">Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</div>
@@ -59,9 +59,9 @@
                     <div class="title-advice icon-present">Сувениры</div>
                     <div class="slogan-advice">Не только китайского,<br> но и местного производства!</div>
                 </div>
-            </div>
+            </section>
             
-            <div class="reasons">
+            <section class="reasons">
                 <div class="column-photo">
                     <img src="http://placehold.it/150x100" alt="Мост дьявола" width="800" height="256">
                 </div>
@@ -70,9 +70,9 @@
                     <div class="number-reason">- №2 -</div>
                     <div class="slogan-reason">Да, по нему можно пройти!<br> Если конечно вы осмелитесь</div>
                 </div>
-            </div>
+            </section>
             
-            <div class="reasons">
+            <section class="reasons">
                 <div class="column-text">
                     <div class="reason-title">Небольшая<br>площадь</div>
                     <div class="number-reason">- №3 -</div>
@@ -85,19 +85,64 @@
                 </div>
                 <div class="column-text">
                     <div class="reason-title">Мало<br> туристов</div>
-                    <div class="number-reason">- №5 -</div>
-                    <div class="slogan-reason">Большинство едет в Гранд Каньон<br> и толпится там</div>
+                    <span class="number-reason">- №5 -</span>
+                    <p class="slogan-reason">Большинство едет в Гранд Каньон<br> и толпится там</p>
                 </div>
-            </div>
+            </section>
             
             <div class="search-hotel">
                 <h2>Заинтересовались?</h2>
                 <p>Укажите предполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                <a class="btn-search">Поиск гостиницы в Седоне</a>
             </div>
         </div>
         
         <footer class="main-footer">
-            
+            <div class="map-search">
+                <div class="map">
+                    <img class="img-map" alt="Карта" src="http://placehold.it/150x100" width="884" height="395">
+                </div>
+                <div class="popup-search">
+                    <form class="form" method="post">
+                        <fieldset class="popup-date">
+                            <label class="popup-date-label" for="date-in">Дата заезда:</label>    
+                            <input class="popup-date-input" type="date" id="date-in" name="date-in">
+                            <span class="icon-calendar"></span>
+                        </fieldset>
+                        <fieldset class="popup-date"> 
+                            <label class="popup-date-label" for="date-in">Дата выезда:</label>    
+                            <input class="popup-date-input" type="date" id="date-out" name="date-out">
+                            <span class="icon-calendar"></span>
+                        </fieldset>
+                        <fieldset class="popup-select">
+                            <label class="popup-select-label" for="count-adult">Взрослые:</label>
+                            <button class="icon-minus" type="button"></button>
+                            <input class="popup-select-input" type="text" name="count-adult" id="count-adult" value="2">
+                            <button class="icon-plus" type="button"></button>
+                        </fieldset>
+                        <fieldset class="popup-select">
+                            <label class="popup-select-label" for="count-child">Дети:</label>
+                            <input class="popup-select-input" type="text" name="count-child" id="count-child" value="0">
+                            <button class="icon-plus" type="button"></button>
+                        </fieldset>
+                        <input class="btn" type="submit" value="Найти">
+                    </form>
+                </div>
+            </div>
+            <div class="footer-block">
+                <div class="footer-hashtag">
+                    <a href="#">#visitsedona</a>
+                </div>
+                <div class="footer-socials">
+                    <a class="btn icon-tw" href="#">twitter</a>
+                    <a class="btn icon-fb" href="#">facebook</a>
+                    <a class="btn icon-yt" href="#">youtube</a>
+                </div>
+                <div class="footer-copyright">
+                    <span>website by</span>
+                    <a class="logo-academy" href="https://htmlacademy.ru/">logo-htmlacademy</a>
+                </div>
+            </div>
         </footer>
     </div>
 </body>

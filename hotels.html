@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sedona-hotels</title>
+<!--    <link rel="stylesheet" href="#">-->
+</head>
+<body>
+    <div class="main-container">
+        <header class="main-header">
+            <nav class="main-navigation">
+                <a class="logo" href="#">logo</a>
+                <ul>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Фото и видео</a>
+                    </li>
+                    <li>
+                        <a href="#">Карта штата</a>
+                    </li>
+                    <li>
+                        <a href="#">Гостиницы</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="hotels-filters">
+            <form class="filter">
+                <div class="filter-items">
+                    <fieldset class="items">
+                        <h2 class="title-filter">Инфраструктура</h2>
+                        
+                    </fieldset>
+                    <fieldset class="items">
+                        <h2 class="title-filter">Тип жилья</h2>
+                        
+                    </fieldset>
+                </div>
+                
+                <div class="filter-cost">
+                    <h2 class="title-filter">Стоимость в сутки (р):</h2>
+                    <div class="cost-control" id="cost-control">
+                        <div class="cost-group">
+                            <label>от <input class="cost-input-in" type="text" name="cost-in" value="0"></label>
+                            <label>до <input class="cost-input-out" type="text" name="cost-out" value="3000"></label>
+                        </div>
+                        <div class="scale">
+                            <button class="scale-slider-min" type="button"></button>
+                            <button class="scale-slider-max" type="button"></button>
+                        </div>
+                    </div>
+                    <button class="btn" type="submit">Показать</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="hotels">
+            <header class="hotels-header">
+                <h2 class="hotels-find-count">Найдено: 3</h2>
+
+                <div class="sort-type">
+                  <div class="sort-title">Сортировка:</div>
+                  <a class="active" href="#">по цене</a>
+                  <a href="#">по типу</a>
+                  <a href="#">по рейтингу</a>
+                </div>
+
+                <div class="sort">
+                  <a class="icon-up" href="#"></a>
+                  <a class="icon-down icon-active" href="#"></a>
+                </div>
+            </header> 
+            
+            <div class="hotels-content">
+                <section class="hotel-items">
+                    
+                </section>
+                
+                <section class="hotel-items">
+                    
+                </section>
+                
+                <section class="hotel-items">
+                    
+                </section>
+            </div>
+        </div>
+        
+         <footer class="main-footer">
+            <div class="footer-block">
+                <div class="footer-hashtag">
+                    <a href="#">#visitsedona</a>
+                </div>
+                <div class="footer-socials">
+                    <a class="btn icon-tw" href="#">twitter</a>
+                    <a class="btn icon-fb" href="#">facebook</a>
+                    <a class="btn icon-yt" href="#">youtube</a>
+                </div>
+                <div class="footer-copyright">
+                    <span>website by</span>
+                    <a class="logo-academy" href="https://htmlacademy.ru/">logo-htmlacademy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
