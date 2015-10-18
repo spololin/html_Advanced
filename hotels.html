@@ -28,47 +28,30 @@
         </header>
         
         <div class="hotels-filters">
-            <form class="filter">
-                <div class="filter-items">
-                    <fieldset class="items">
-                        <h2 class="title-filter">Инфраструктура</h2>
-                        <ul>
-                            <li>
-                                <input class="input-check" type="checkbox" id="comfort1" name="comfort" checked>
-                                <label for="comfort1">Бассейн</label>
-                            </li>
-                            <li>
-                                <input class="input-check" type="checkbox" id="comfort2" name="comfort">
-                                <label for="comfort2">Парковка</label>
-                            </li>
-                            <li>
-                                <input class="input-check" type="checkbox" id="comfort3" name="comfort">
-                                <label for="comfort3">wi-fi</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset class="items">
-                        <h2 class="title-filter">Тип жилья</h2>
-                        <ul>
-                            <li>
-                                <input class="input-check" type="checkbox" id="house1" name="house" checked>
-                                <label for="comfort1">Гостиница</label>
-                            </li>
-                            <li>
-                                <input class="input-check" type="checkbox" id="house2" name="house" checked>
-                                <label for="house2">Мотель</label>
-                            </li>
-                            <li>
-                                <input class="input-check" type="checkbox" id="house3" name="house" checked>
-                                <label for="comfort3">Апартаменты</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </div>
-                
+            <form action="" method="post">
+                <fieldset class="filter-item">
+                    <h2 class="title-filter">Инфраструктура</h2>
+                    <input class="input-check" type="checkbox" id="comfort1" name="comfort" checked>
+                    <label for="comfort1">Бассейн</label>
+                    <input class="input-check" type="checkbox" id="comfort2" name="comfort">
+                    <label for="comfort2">Парковка</label>
+                    <input class="input-check" type="checkbox" id="comfort3" name="comfort">
+                    <label for="comfort3">wi-fi</label>
+                </fieldset>
+
+                <fieldset class="filter-items">
+                    <h2 class="title-filter">Тип жилья</h2>
+                    <input class="input-check" type="checkbox" id="house1" name="house" checked>
+                    <label for="comfort1">Гостиница</label>
+                    <input class="input-check" type="checkbox" id="house2" name="house" checked>
+                    <label for="house2">Мотель</label>
+                    <input class="input-check" type="checkbox" id="house3" name="house" checked>
+                    <label for="comfort3">Апартаменты</label>
+                </fieldset>
+
                 <div class="filter-cost">
                     <h2 class="title-filter">Стоимость в сутки (р):</h2>
-                    <div class="cost-control" id="cost-control">
+                    <div class="cost-control">
                         <div class="cost-group">
                             <label>от <input class="cost-input-in" type="text" name="cost-in" value="0"></label>
                             <label>до <input class="cost-input-out" type="text" name="cost-out" value="3000"></label>
@@ -88,7 +71,7 @@
 
             <div class="sort-type">
               <div class="sort-title">Сортировка:</div>
-              <a class="active" href="#">по цене</a>
+              <a class="active-sort-type" href="#">по цене</a>
               <a href="#">по типу</a>
               <a href="#">по рейтингу</a>
             </div>
@@ -117,7 +100,7 @@
             </div>
             
             <div class="rating">
-                <div class="rating-stars"><i class="icon-star"></i><i class="icon-star"></i></div>
+                <div class="rating-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
                 <div class="rating-value">Рейтинг: 8,5</div>
             </div>   
         </section>
@@ -140,7 +123,7 @@
             </div>
             
             <div class="rating">
-                <div class="rating-stars" data-rating="2"></div>
+                <div class="rating-stars"><i class="icon-star"></i><i class="icon-star"></i></div>
                 <div class="rating-value">Рейтинг:
                     <span>8,9</span>
                 </div>
@@ -165,28 +148,23 @@
             </div>
             
             <div class="rating">
-                <div class="rating-stars" data-rating="3"></div>
+                <div class="rating-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
                 <div class="rating-value">Рейтинг:
                     <span>9,2</span>
                 </div>
             </div>     
         </section>
         
-         <footer class="main-footer">
-            <div class="footer-block">
-                <div class="footer-hashtag">
-                    <a href="#">#visitsedona</a>
-                </div>
-                <div class="footer-socials">
-                    <a class="btn icon-tw" href="#">twitter</a>
-                    <a class="btn icon-fb" href="#">facebook</a>
-                    <a class="btn icon-yt" href="#">youtube</a>
-                </div>
-                <div class="footer-copyright">
-                    <span>website by</span>
-                    <a class="logo-academy" href="https://htmlacademy.ru/">logo-htmlacademy</a>
-                </div>
+        <footer class="footer">
+            <a href="#" class="footer-hashtag">#visitsedona</a>
+
+            <div class="footer-socials">
+                <a class="btn icon-tw" href="#">twitter</a>
+                <a class="btn icon-fb" href="#">facebook</a>
+                <a class="btn icon-yt" href="#">youtube</a>
             </div>
+
+            <div class="footer-copyright">website by<a class="logo-academy" href="https://htmlacademy.ru/">logo-htmlacademy</a></div>
         </footer>
     </div>
 </body>
