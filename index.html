@@ -35,15 +35,23 @@
             <header class="reasons-header">
                 <h1 class="reasons-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
                 <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-            </header>    
+            </header>
             
-            <div class="reason-row"> 
-                <div class="reason left-row">
+            .reason-row-image .reason{
+                float: left;
+            }
+            
+            .reason-row-image .reason-picture{
+                float: right;
+            }
+            
+            <div class="reason-row reason-row-image"> 
+                <div class="reason">
                     <h2 class="reason-title">Настоящий<br> городок</h2>
                     <div class="reason-number">- №1 -</div>
                     <p class="reason-text">Седона не атракцион для туристов,<br> там течет своя жизнь</p>
                 </div>
-                <figure class="reason-picture right-row">
+                <figure class="reason-picture">
                     <img src="http://placehold.it/150x100" alt="Фото города" width="800" height="256">
                 </figure>
             </div>
@@ -64,11 +72,12 @@
                 </div>
             </div>
             
-            <div class="reason-row">
-                <figure class="reason-picture left-row">
+            
+            <div class="reason-row reason-row-image-invert">
+                <figure class="reason-picture">
                     <img src="http://placehold.it/150x100" alt="Мост дьявола" width="800" height="256">
                 </figure>
-                <div class="reason right-row">
+                <div class="reason">
                     <h2 class="reason-title">Там есть<br> мост дьявола</h2>
                     <div class="reason-number">- №2 -</div>
                     <p class="reason-text">Да, по нему можно пройти!<br> Если конечно вы осмелитесь</p>
