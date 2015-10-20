@@ -1,0 +1,21 @@
+body{
+    font-size: 14px;
+    line-height: normal;
+    color: #000000;
+    font-weight: normal;
+    font-family: "PTSans NarrowBold", "PT Sans", "Arial", serif;
+}
+
+h1{
+    font-size: 21px;
+    line-height: 26px;
+}
+
+h2{
+    font-size: 21px;
+    line-height: 21px;
+}
+
+p{
+    line-height: 21px;
+}
