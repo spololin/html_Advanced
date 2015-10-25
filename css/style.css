@@ -24,6 +24,11 @@
   src: url("../fonts/PTSans/PTS55F.ttf");
 }
 
+/*Чтоб не мешало )))*/
+.popup-search{
+    display: none;
+}
+
 
 
 /**
@@ -31,6 +36,7 @@
  *       Сетка
  *  ===========================================
 **/
+
 
 /*  ширина и центрирование
 -----------------------------------------------*/
@@ -40,53 +46,107 @@
     margin: 0 auto;
 }
 
+
 /*  правила шапки сайта
 -----------------------------------------------*/
-.main-navigation ul{
-    margin: 0;
-    padding: 0;
-    font-size: 0;
+.main-header{
+    position: relative;
 }
 
-    .main-navigation li {
-        display: inline-block;
-        vertical-align: top;
-        width: 20%;
+    .main-header .logo{
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: -15px;
+        margin-left: -69px;
     }
 
-
-        .main-navigation li:nth-child(2) {
-            margin-right: 20%;
+        .main-navigation ul{
+            margin: 0;
+            padding: 0 6%;
+            font-size: 0;
         }
 
-        .main-navigation a {
-            display: block;
-            font-size: 14px;
-            padding: 15px 0;
-            text-align: center;
-            text-decoration: none;
-            color: #000;
-        }
+            .main-navigation li {
+                display: inline-block;
+                vertical-align: top;
+                width: 20%;
+            }
 
-.main-header .logo{
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: -15px;
-    margin-left: -69px;
-}
+                .main-navigation li.offset{
+                        margin-right: 20%;
+                }
+
+                .main-navigation li:nth-child(3) {
+                    text-align: right;
+                }
+
+                .main-navigation li:nth-child(4) {
+                    text-align: right;
+                }
+
+                    .main-navigation a {
+                        display: inline-block;
+                        font-size: 14px;
+                        padding: 15px 0;
+                        text-align: center;
+                        text-decoration: none;
+                        color: #000;
+                    }
+
+                    .main-navigation a:hover{
+                        color: #a3c7de;
+                    }
+
+                    .main-navigation a:active{
+                        color: #b2b2b2;
+                    }
+
 
 /*  правила подвала сайта
 -----------------------------------------------*/
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 0;
+    font-size: 0;
+}
+
+    .footer-hashtag{
+        display: inline-block;
+        width: 33.33%;
+        font-size: 21px;
+    }
+
+    .footer-socials{
+        display: inline-block;
+        width: 33.33%;
+        font-size: 14px;
+    }
+
+    .footer-copyright{
+        display: inline-block;
+        width: 33.33%;
+        font-size: 14px;
+    }
+
+        .footer-copyright .logo-academy{
+            display: inline-block;
+            font-size: 0;
+            width: 113px;
+            height: 39px;
+            margin: 4px 8px;
+        }
 
     
 /*  правила страницы index.html
 -----------------------------------------------*/
 .promo{
+    position: relative;
     width: 100%;
     height: 508px;
-    background: url("../img/promo_img.jpg") no-repeat 50% 30%;
-    background-size: cover;
 }
 
     .promo img{
@@ -100,7 +160,7 @@
     background: #ffffff;
 }
 
-    .reasons-title{
+    .reasons-header .reasons-title{
         display: block;
         margin: 0 auto;
         padding-top: 64px;
@@ -108,114 +168,128 @@
     }
     
 .reason-row{
-    height: 256px;
+    min-height: 256px;
 }
             
-    .reason{
+    .reason-row .reason{
         float: left;
         width: 33.33%;
         height: 256px;
         font-size: 14px;
         vertical-align: top;
         text-align: center;
-        padding: 35px 6% 0;
+        padding: 35px 4% 0;
         box-sizing: border-box;
         background: #81b3d2;
         color: #ffffff;
     }
-    .reason-row-image .reason-picture{
-        float: right;
-    }
 
-    .reason-row-image .reason{
-        float: left;
-    }
+.reason-row-image .reason-picture{
+    float: right;
+}
 
-            .reason-row-image-invert .reason{
-                float: right;
-            }
-            
-            .reason-row-image-invert .reason-picture{
-                float: left;
-            }
+.reason-row-image .reason{
+    float: left;
+}
+
+.reason-row-image-invert .reason{
+    float: right;
+}
+
+.reason-row-image-invert .reason-picture{
+    float: left;
+}
 
     .reason-image{
+        position: relative;
         background: #ffffff;
         color: #000000;
     }
 
+        .reason-image .reason-title{
+            padding-top: 105px;
+        }
+
+        .reason-image .reason-text{
+            font-family: "PTSans Regular", "Arial", sans-serif;
+            line-height: 21px;
+        }
+
     .reason-picture{
+        position: relative;
         display: inline-block;
         width: 66.67%;
         height: 256px;
+        overflow: hidden;
         font-size: 14px;
     }
 
-    .reason-row-gray .reason{
-        background: #eeeeee;
-        color:#000000;
-    }
-/*
-    .reason-title{
+        .reason-picture img{
+            position: absolute;
+            max-width: 100%;
+            height: auto;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+
+.reason-row-gray .reason{
+    background: #eeeeee;
+    color:#000000;
+}
+
+.search-hotel{
+   width: 568px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .search-hotel .search-hotel-title{
+        font-size: 30px;
+        line-height: 24px;
         text-align: center;
+        margin-top: 59px;
     }
-*/
-        
+
+    .search-hotel .search-text{
+        font-family: "PTSans Regular", "Arial", sans-serif;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 29px;
+    }
+
+.btn-search{
+    display: block;
+    margin: 0 auto;
+    background: #766357;
+    padding: 30px;
+    margin-top: 45px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 21px;
+}
+
+    .btn-search:hover{
+        background: #604e43;
+    }
+
+    .btn-search:active{
+        background: #503e33;
+        color: rgba(255,255,255,0.3);
+    }
+
+.map{
+    position: relative;
+    height: 593px;
+}
+
+
+
 /**
  *  ============================================
  *       Оформление и декорирование
  *  ============================================
 **/
-
-.main-container{
-    box-shadow: 0 -5px 15px 0 rgba(0,0,0,.2);
-    background: #ffffff;
-}
-
-
-.main-header{
-    position: relative;
-    background: #fff;
-}
-
-.main-navigation ul{
-    list-style: none;
-}
-
-.promo{
-    position: relative;
-}
-
-    .promo::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 57px;
-        background: url("../img/promo_maska.png");
-    }
-
-/*
-.reasons-title{
-    text-align: center;
-}
-*/
-
-.reasons-header p{
-    font-family: "PTSans Regular", "Arial", sans-serif;
-    text-align: center;
-    margin-top: 38px;
-}
-
-    .reason-number{
-        font-family: "PTSans Regular", "Arial", sans-serif;
-    }
-
-    .reason-text{
-        font-family: "PTSans Regular", "Arial", sans-serif;
-        line-height: 21px;
-    }
 
 body{
     background: #f2f2f2;
@@ -245,3 +319,120 @@ figure{
     margin: 0;
     padding: 0;
 }
+
+.main-container{
+    box-shadow: 0 -5px 15px 0 rgba(0,0,0,.2);
+    background: #ffffff;
+}
+
+
+.main-header{
+    background: #fff;
+}
+
+    .main-navigation ul{
+        list-style: none;
+    }
+
+.promo{
+    background: url("../img/promo_img.jpg") no-repeat 50% 30%;
+    background-size: cover;
+}
+
+    .promo::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 57px;
+        background: url("../img/promo_maska.png");
+        background-size: 100% 57px;
+    }
+
+.reasons-title{
+    text-align: center;
+}
+
+    .reason-image::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 60px;
+            width: 75px;
+            height: 76px;
+            margin-left: -38px;
+            background: url("../img/sprites_advices.png") no-repeat transparent;
+    }
+
+        .reason-image-home::before {
+            background-position: 0 0;
+        }
+
+        .reason-image-hamburger::before {
+            background-position: 0 -88px;
+        }
+
+        .reason-image-gift::before {
+            background-position: 0 -182px;
+        }
+
+.reasons-header p{
+    font-family: "PTSans Regular", "Arial", sans-serif;
+    text-align: center;
+    margin-top: 38px;
+    margin-bottom: 20px;
+}
+
+    .reason-number{
+        font-family: "PTSans Regular", "Arial", sans-serif;
+        line-height: 21px;
+    }
+
+    .reason-text{
+        font-family: "PTSans Regular", "Arial", sans-serif;
+        line-height: 21px;
+    }
+
+.reason-row .reason-image{
+    min-height: 330px;
+    background: #ffffff;
+    color: #000000;
+}
+
+.footer{
+    background: rgba(254, 254, 254, 0.9);
+}
+
+.footer-hashtag{
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.footer-socials{
+    text-align: center;
+}
+
+.footer-copyright{
+    font-family: "PTSans Regular", "Alial", sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+    .footer-copyright .logo-academy{
+        vertical-align: middle;
+        text-decoration: none;
+        background: transparent url("../img/sprites_ha.png") no-repeat;
+        background-position: 50% 0;
+    }
+
+        .logo-academy:hover {
+            background-position: 50% -48px;
+        }
+
+        .logo-academy:active {
+            background-position: 50% -95px;
+        }
