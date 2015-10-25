@@ -24,6 +24,17 @@
   src: url("../fonts/PTSans/PTS55F.ttf");
 }
 
+@font-face {
+  font-family: 'symbols-sedona';
+  src: url('../fonts/symbols-sedona/symbols-sedona.eot?60737633');
+  src: url('../fonts/symbols-sedona/symbols-sedona.eot?60737633#iefix') format('embedded-opentype'),
+       url('../fonts/symbols-sedona/symbols-sedona.woff?60737633') format('woff'),
+       url('../fonts/symbols-sedona/symbols-sedona.ttf?60737633') format('truetype'),
+       url('../fonts/symbols-sedona/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*Чтоб не мешало )))*/
 .popup-search{
     display: none;
