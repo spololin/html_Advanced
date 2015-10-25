@@ -1,9 +1,230 @@
+/**
+ *  ===========================================
+ *       Cлужебные правила
+ *  ===========================================
+**/
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+@font-face {
+  font-family: "PTSans Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PTSans/PTS75F.ttf");
+}
+
+@font-face {
+  font-family: "PTSans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PTSans/PTS55F.ttf");
+}
+
+
+
+/**
+ *  ===========================================
+ *       Сетка
+ *  ===========================================
+**/
+
+/*  ширина и центрирование
+-----------------------------------------------*/
+.main-container{
+    min-width: 768px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*  правила шапки сайта
+-----------------------------------------------*/
+.main-navigation ul{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+    .main-navigation li {
+        display: inline-block;
+        vertical-align: top;
+        width: 20%;
+    }
+
+
+        .main-navigation li:nth-child(2) {
+            margin-right: 20%;
+        }
+
+        .main-navigation a {
+            display: block;
+            font-size: 14px;
+            padding: 15px 0;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+        }
+
+.main-header .logo{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: -15px;
+    margin-left: -69px;
+}
+
+/*  правила подвала сайта
+-----------------------------------------------*/
+
+    
+/*  правила страницы index.html
+-----------------------------------------------*/
+.promo{
+    width: 100%;
+    height: 508px;
+    background: url("../img/promo_img.jpg") no-repeat 50% 30%;
+    background-size: cover;
+}
+
+    .promo img{
+        display: block;
+        margin: 0 auto;
+        padding-top: 76px;
+    }
+
+.reasons-header{
+    height: 216px;
+    background: #ffffff;
+}
+
+    .reasons-title{
+        display: block;
+        margin: 0 auto;
+        padding-top: 64px;
+        width: 500px;
+    }
+    
+.reason-row{
+    height: 256px;
+}
+            
+    .reason{
+        float: left;
+        width: 33.33%;
+        height: 256px;
+        font-size: 14px;
+        vertical-align: top;
+        text-align: center;
+        padding: 35px 6% 0;
+        box-sizing: border-box;
+        background: #81b3d2;
+        color: #ffffff;
+    }
+    .reason-row-image .reason-picture{
+        float: right;
+    }
+
+    .reason-row-image .reason{
+        float: left;
+    }
+
+            .reason-row-image-invert .reason{
+                float: right;
+            }
+            
+            .reason-row-image-invert .reason-picture{
+                float: left;
+            }
+
+    .reason-image{
+        background: #ffffff;
+        color: #000000;
+    }
+
+    .reason-picture{
+        display: inline-block;
+        width: 66.67%;
+        height: 256px;
+        font-size: 14px;
+    }
+
+    .reason-row-gray .reason{
+        background: #eeeeee;
+        color:#000000;
+    }
+/*
+    .reason-title{
+        text-align: center;
+    }
+*/
+        
+/**
+ *  ============================================
+ *       Оформление и декорирование
+ *  ============================================
+**/
+
+.main-container{
+    box-shadow: 0 -5px 15px 0 rgba(0,0,0,.2);
+    background: #ffffff;
+}
+
+
+.main-header{
+    position: relative;
+    background: #fff;
+}
+
+.main-navigation ul{
+    list-style: none;
+}
+
+.promo{
+    position: relative;
+}
+
+    .promo::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 57px;
+        background: url("../img/promo_maska.png");
+    }
+
+/*
+.reasons-title{
+    text-align: center;
+}
+*/
+
+.reasons-header p{
+    font-family: "PTSans Regular", "Arial", sans-serif;
+    text-align: center;
+    margin-top: 38px;
+}
+
+    .reason-number{
+        font-family: "PTSans Regular", "Arial", sans-serif;
+    }
+
+    .reason-text{
+        font-family: "PTSans Regular", "Arial", sans-serif;
+        line-height: 21px;
+    }
+
 body{
+    background: #f2f2f2;
+    font-family: "PTSans Bold", "PT Sans", "Arial", serif;
+    text-transform: uppercase;
     font-size: 14px;
-    line-height: normal;
+    line-height: 26px;
     color: #000000;
     font-weight: normal;
-    font-family: "PTSans NarrowBold", "PT Sans", "Arial", serif;
 }
 
 h1{
@@ -17,5 +238,10 @@ h2{
 }
 
 p{
-    line-height: 21px;
+    line-height: 26px;
+}
+
+figure{
+    margin: 0;
+    padding: 0;
 }

@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="main-container">
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="logo" href="#"><img src="img/header_logo.png" alt="Sedona" width="128" height="70"></a>
+                <a class="logo" href="#"><img src="img/header_logo.png" alt="Sedona" width="138" height="70"></a>
                 <ul>
                     <li>
                         <a href="#">Информация</a>
@@ -28,13 +29,13 @@
         </header>
         
         <div class="promo">
-            <img src="img/promo_text.png" alt="Sedona">
+            <img src="img/promo_text.png" alt="Sedona" width="458" height="352">
         </div>
         
         <article class="reasons">
             <header class="reasons-header">
                 <h1 class="reasons-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-                <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+                <p>Рассмотрим 5 причин, по которым Седона круче чем, гранд каньон!</p>
             </header>
             
 <!--
@@ -47,7 +48,7 @@
             }
 -->
             
-            <div class="reason-row reason-row-image"> 
+            <div class="reason-row reason-row-image clearfix"> 
                 <div class="reason">
                     <h2 class="reason-title">Настоящий<br> городок</h2>
                     <div class="reason-number">- №1 -</div>
@@ -58,7 +59,7 @@
                 </figure>
             </div>
             
-            <div class="reason-row">
+            <div class="reason-row clearfix">
                 <div class="reason reason-image reason-image-home">
                     <h2 class="advice-title">Жилье</h2>
                     <p class="advice-text">Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
@@ -84,7 +85,7 @@
             }
 -->
             
-            <div class="reason-row reason-row-image-invert">
+            <div class="reason-row reason-row-image-invert clearfix">
                 <figure class="reason-picture">
                     <img src="img/img_2.jpg" alt="Мост дьявола" width="800" height="256">
                 </figure>
@@ -124,34 +125,7 @@
         
         <div class="map">
             <div class="map-canvas">
-                <img class="img-map" alt="Карта" src="img/map.jpg" width="884" height="395">
-            </div>
-            
-            <div class="popup-search">
-                <form method="post" action="search">
-                    <fieldset class="popup-date">
-                        <label class="popup-date-label" for="date-in">Дата заезда:</label>    
-                        <input class="popup-date-input" type="date" id="date-in" name="date-in">
-                        <span class="icon-calendar"></span>
-                    </fieldset>
-                    <fieldset class="popup-date"> 
-                        <label class="popup-date-label" for="date-in">Дата выезда:</label>    
-                        <input class="popup-date-input" type="date" id="date-out" name="date-out">
-                        <span class="icon-calendar"></span>
-                    </fieldset>
-                    <fieldset class="popup-select">
-                        <label class="popup-select-label" for="count-adult">Взрослые:</label>
-                        <button class="icon-minus" type="button"></button>
-                        <input class="popup-select-input" type="text" name="count-adult" id="count-adult" value="2">
-                        <button class="icon-plus" type="button"></button>
-                    </fieldset>
-                    <fieldset class="popup-select">
-                        <label class="popup-select-label" for="count-child">Дети:</label>
-                        <input class="popup-select-input" type="text" name="count-child" id="count-child" value="0">
-                        <button class="icon-plus" type="button"></button>
-                    </fieldset>
-                    <button class="btn" type="submit">Найти</button>
-                </form>
+                <img class="img-map" alt="Карта" src="img/map.jpg" width="1280" height="747">
             </div>
             
             <footer class="footer">
@@ -166,6 +140,33 @@
                 <div class="footer-copyright">website by<a class="logo-academy" href="https://htmlacademy.ru/">logo-htmlacademy</a></div>
             </footer>
         </div>
+    </div>
+    
+    <div class="popup-search">
+        <form method="post" action="search">
+            <fieldset class="popup-date">
+                <label class="popup-date-label" for="date-in">Дата заезда:</label>    
+                <input class="popup-date-input" type="date" id="date-in" name="date-in">
+                <span class="icon-calendar"></span>
+            </fieldset>
+            <fieldset class="popup-date"> 
+                <label class="popup-date-label" for="date-in">Дата выезда:</label>    
+                <input class="popup-date-input" type="date" id="date-out" name="date-out">
+                <span class="icon-calendar"></span>
+            </fieldset>
+            <fieldset class="popup-select">
+                <label class="popup-select-label" for="count-adult">Взрослые:</label>
+                <button class="icon-minus" type="button"></button>
+                <input class="popup-select-input" type="text" name="count-adult" id="count-adult" value="2">
+                <button class="icon-plus" type="button"></button>
+            </fieldset>
+            <fieldset class="popup-select">
+                <label class="popup-select-label" for="count-child">Дети:</label>
+                <input class="popup-select-input" type="text" name="count-child" id="count-child" value="0">
+                <button class="icon-plus" type="button"></button>
+            </fieldset>
+            <button class="btn" type="submit">Найти</button>
+        </form>
     </div>
 </body>
 </html>
