@@ -139,8 +139,20 @@
                     }
 
                     .main-navigation a:active{
+                        color: rgba(0, 0, 0, 0.3);
+                    }
+
+                    .main-navigation a.active{
                         color: #b2b2b2;
                     }
+
+                        .main-navigation a.active:hover{
+                            color: #766357;
+                        }
+
+                        .main-navigation a.active:active{
+                            color: rgba(118, 99, 87, 0.3);
+                        }
 
 
 /*  правила подвала сайта
@@ -361,16 +373,27 @@ input[type="checkbox"] + label{
 
 input[type="checkbox"] + label::before{
     content: "\2610";
+    color: #b5b5b5;
     font-family: "symbols-sedona";
     display: inline-block;
     vertical-align: top;
     font-size: 26px;
-    margin-right: 15px;
+    margin-right: 17px;
+}
+
+input[type="checkbox"] + label:hover::before{
+    color: #ffffff;
+}
+
+input[type="checkbox"]:disabled + label::before,
+input[type="checkbox"]:disabled + label{
+    color: #595c5c;
+    cursor: default;
 }
 
 input[type="checkbox"]:checked + label::before{
     content: "\2611";
-    margin-right: 11px;
+    margin-right: 13px;
 }
 
 .filter-cost{
@@ -412,6 +435,10 @@ input[type="checkbox"]:checked + label::before{
         box-shadow: 0 2px 0 0 rgba(0,0,0,.14);
         cursor: pointer;
     }
+
+        .scale button:hover {
+            background: #1c4f80;
+        }
 
         .scale button.scale-min{
             left: 0;
@@ -882,6 +909,18 @@ button.btn{
         text-decoration: none;
     }
 
+        .footer-socials a:hover,
+        .footer-socials a:hover,
+        .footer-socials a:hover{
+            background: #669ec0;
+        }
+
+        .footer-socials a:active,
+        .footer-socials a:active,
+        .footer-socials a:active{
+            background: #5496bd;
+        }
+
     .footer-socials a::before{
         font-size: 20px;
         line-height: 48px;
@@ -892,6 +931,12 @@ button.btn{
 .footer-socials a.icon-youtube::before{
     color: #ffffff;
 }
+
+    .footer-socials a.icon-twitter:active::before,
+    .footer-socials a.icon-facebook:active::before,
+    .footer-socials a.icon-youtube:active::before{
+        opacity: 0.3;
+    }
 
 .footer-copyright{
     font-family: "PTSans Regular", "Alial", sans-serif;
