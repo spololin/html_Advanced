@@ -229,6 +229,7 @@ body{
   
 .reason-row{
     min-height: 256px;
+    width: 100%;
 }
             
     .reason-row .reason{
@@ -793,7 +794,8 @@ button.btn{
 
 /*  правила страниц index.html и hotels.html
 -----------------------------------------------*/
-.clearfix::after {
+.clearfix::after,
+.reason-row {
     content: '';
     display: table;
     clear: both;
