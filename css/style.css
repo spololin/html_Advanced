@@ -375,10 +375,11 @@ body{
     }
 
 .btn-search{
+    position: relative;
     display: block;
     margin: 0 auto;
     background: #766357;
-    padding: 30px;
+    padding: 30px 0;
     margin-top: 50px;
     text-decoration: none;
     color: #ffffff;
@@ -607,7 +608,7 @@ button.btn{
     background-color: transparent;   
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
-    color: #FFF;
+    color: #ffffff;
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
@@ -849,10 +850,6 @@ button.btn{
 .icon-youtube:before { content: '\f39e'; } /* '' */
 
 
-.popup-search{
-    display: none;
-}
-
 h1{
     font-size: 21px;
     line-height: 26px;
@@ -872,5 +869,165 @@ fieldset{
     border: none;
 }
 
-/*  правила для формы регистрации
+.hidden{
+    display: none;
+}
+
+/*  правила для формы поиска
 -----------------------------------------------*/
+.search-hotel-form {
+    display: block;
+    position: absolute;
+    max-width: 568px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,.15);
+    left: 50%;
+    margin-left: -284px;
+}
+
+.form {
+    margin: 55px;
+}
+
+    .form-row {
+        position: relative;
+        margin: 0;
+        margin-bottom: 25px;
+        padding: 0;
+        border: none;
+        font-size: 0;
+        font-weight: 700;
+        text-align: left;
+    }
+
+        .form .form-label {
+            display: inline-block;
+            vertical-align: top;
+            width: 115px;
+            font-size: 14px;
+            line-height: 41px;
+        }
+
+        .form .form-input {
+            display: inline-block;
+            vertical-align: top;
+            box-sizing: border-box;
+            font-size: 14px;
+            line-height: 24px;
+            padding: 8px;
+            padding-right: 38px;
+            background: #f2f2f2;
+            border: 2px solid #f2f2f2;
+        }
+
+            .form .form-input:hover{
+                background: #ebebeb;
+            }
+
+            .form .form-input:focus{
+                background: #ffffff;
+                border: 2px solid #e5e5e5;
+            }
+
+.form-input-date {
+    width: 343px;
+    padding-right: 38px;
+}
+
+.icon-calendar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #a9a9a9;
+}
+
+    .icon-calendar::before {
+        width: 38px;
+        margin: 0;
+        font-size: 21px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .form-input-date:hover + .icon-calendar {
+        color: #000000;
+    }
+
+    .form-input-date:focus + .icon-calendar {
+        color: #81b3d2;
+    }
+
+.counter {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 0;
+}
+
+    .counter .form-input-counter {
+        box-sizing: border-box;
+        width: 38px;
+        padding: 5px 0;
+        text-align: center;
+        outline: medium none;
+        border: 2px solid #f2f2f2;
+
+    }
+
+    .counter button {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0;
+        border: none;
+        outline: none;
+        color: #a9a9a9;
+        background: #f2f2f2;
+    }
+
+        .counter button::before {
+            display: block;
+            width: 38px;
+            margin: 0;
+            font-size: 14px;
+            line-height: 38px;
+            text-align: center;
+        }
+
+            .icon-minus:hover::before, .icon-plus:hover::before{
+                color: #000000;
+            }
+
+            .icon-minus:active::before, .icon-plus:active::before{
+                color: #81b3d2;
+            }
+
+.counter .form-label[for='counter-children'] {
+    width: 65px;
+    margin-left: 50px;
+}
+
+.form .btn {
+    width: 100%;
+    margin-top: 24px;
+    padding: 16px;
+    background: #81b3d2;
+    border: none;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+    .form .btn:hover{
+        background: #669ec0;
+    }
+
+    .form .btn:active{
+        background: #5496bd;
+        color: rgba(255, 255, 255, 0.3);
+    }

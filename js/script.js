@@ -5,7 +5,7 @@ function initialize() {
   }
   var map = new google.maps.Map(document.getElementById('map-canvas'),
                                 mapOptions);
-  var image = "../img/balun.png";
+  var image = "img/balun.png";
   var myLatLng = new google.maps.LatLng(34.89043, -111.74194);
   var beachMarker = new google.maps.Marker({
     position: myLatLng,

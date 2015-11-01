@@ -77,7 +77,7 @@
                 </div>
             </div>
             
-            <div class="reason-row reason-row-gray">
+            <div class="reason-row reason-row-gray clearfix">
                 <div class="reason">
                     <h2 class="reason-title">Небольшая<br> площадь</h2>
                     <div class="reason-number">&mdash;&nbsp;№3&nbsp;&mdash;</div>
@@ -102,6 +102,38 @@
             <h2 class="search-hotel-title">Заинтересовались?</h2>
             <p class="search-text">Укажите предполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <a href="#" class="btn-search">Поиск гостиницы в Седоне</a>
+            
+            <div class="search-hotel-form">
+                <form class="form" action="/search" method="post">
+                    <fieldset class="form-row">
+                      <label class="form-label" for="date-in">Дата заезда:</label>
+                      <input class="form-input form-input-date" type="date" name="date-in" id="date-in" value="2014-04-24">
+                      <span class="icon-calendar"></span>
+                    </fieldset>
+
+                    <fieldset class="form-row">
+                      <label class="form-label" for="date-out">Дата выезда:</label>
+                      <input class="form-input form-input-date" type="date" name="date-out" id="date-out" value="2014-07-04">
+                      <span class="icon-calendar"></span>
+                    </fieldset>
+
+                    <fieldset class="counters form-row">
+                      <fieldset class="counter">
+                        <label class="form-label" for="counter-adult">Взрослые:</label>
+                        <button class="icon-minus" type="button"></button>
+                        <input class="form-input form-input-counter" type="text" name="counter-adult" id="counter-adult" value="2">
+                        <button class="icon-plus" type="button"></button>
+                      </fieldset>
+                      <fieldset class="counter">
+                        <label class="form-label" for="counter-children">Дети:</label>
+                        <button class="icon-minus" type="button"></button>
+                        <input class="form-input form-input-counter" type="text" name="counter-children" id="counter-children" value="0">
+                        <button class="icon-plus" type="button"></button>
+                      </fieldset>
+                    </fieldset>
+                    <input class="btn" type="submit" value="Найти">
+                </form>
+            </div>
         </div>
         
         <div class="map">
@@ -121,32 +153,6 @@
         </div>
     </div>
     
-    <div class="popup-search">
-        <form method="post" action="search">
-            <fieldset class="popup-date">
-                <label class="popup-date-label" for="date-in">Дата заезда:</label>    
-                <input class="popup-date-input" type="date" id="date-in" name="date-in">
-                <span class="icon-calendar"></span>
-            </fieldset>
-            <fieldset class="popup-date"> 
-                <label class="popup-date-label" for="date-in">Дата выезда:</label>    
-                <input class="popup-date-input" type="date" id="date-out" name="date-out">
-                <span class="icon-calendar"></span>
-            </fieldset>
-            <fieldset class="popup-select">
-                <label class="popup-select-label" for="count-adult">Взрослые:</label>
-                <button class="icon-minus" type="button"></button>
-                <input class="popup-select-input" type="text" name="count-adult" id="count-adult" value="2">
-                <button class="icon-plus" type="button"></button>
-            </fieldset>
-            <fieldset class="popup-select">
-                <label class="popup-select-label" for="count-child">Дети:</label>
-                <input class="popup-select-input" type="text" name="count-child" id="count-child" value="0">
-                <button class="icon-plus" type="button"></button>
-            </fieldset>
-            <button class="btn" type="submit">Найти</button>
-        </form>
-    </div>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
     <script src="js/script.js"></script>
 </body>
