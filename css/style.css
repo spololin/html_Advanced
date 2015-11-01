@@ -55,7 +55,7 @@ body{
                         font-size: 14px;
                         text-align: center;
                         text-decoration: none;
-                        color: #000;
+                        color: #000000;
                     }
 
                     .main-navigation a:hover{
@@ -155,7 +155,6 @@ body{
         display: inline-block;
         width: 33.33%;
         font-size: 14px;
-        font-family: "PT Sans", "Arial", sans-serif;
         font-weight: 400;
         text-align: center;
         text-decoration: none;
@@ -222,7 +221,6 @@ body{
     }
 
     .reasons-header p{
-        font-family: "PT Sans", "Arial", sans-serif;
         font-weight: 400;
         text-align: center;
         margin-top: 26px;
@@ -237,26 +235,22 @@ body{
         float: left;
         width: 33.333333%;
         min-height: inherit;
-        font-size: 14px;
         vertical-align: top;
         text-align: center;
         padding: 35px 4% 10px;
         box-sizing: border-box;
         background: #81b3d2;
-        color: #ffffff;
     }
 
 
     .reason-row .reason-image{
         min-height: 330px;
         background: #ffffff;
-        color: #000000;
     }
 
         .reason-image{
             position: relative;
             background: #ffffff;
-            color: #000000;
         }
 
             .reason-image::before {
@@ -294,19 +288,16 @@ body{
             }
 
                 .reason-number{
-                    font-family: "PT Sans", "Arial", sans-serif;
                     font-weight: 400;
                     line-height: 21px;
                 }
 
         .reason-image .reason-text{
-            font-family: "PT Sans", "Arial", sans-serif;
             font-weight: 400;
             line-height: 21px;
         }
 
         .reason-text{
-            font-family: "PT Sans", "Arial", sans-serif;
             font-weight: 400;
             line-height: 21px;
             margin: 22px 0 0;
@@ -319,10 +310,12 @@ body{
 
 .reason-row-image .reason{
     float: left;
+    color: #ffffff;
 }
 
 .reason-row-image-invert .reason{
     float: right;
+    color: #ffffff;
 }
 
 .reason-row-image-invert .reason-picture{
@@ -366,7 +359,6 @@ body{
     }
 
     .search-hotel .search-text{
-        font-family: "PT Sans", "Arial", sans-serif;
         font-weight: 400;
         line-height: 24px;
         text-align: center;
@@ -438,11 +430,9 @@ body{
     }
 
     .filter-items h2{
-        font-family: "PT Sans", "Arial", sans-serif;
         font-weight: 700;
         font-size: 16px;
         line-height: 21px;
-        color: #ffffff;  
     }
 
 input[type="checkbox"]{ 
@@ -456,9 +446,7 @@ input[type="checkbox"] + label{
     margin-bottom: 26px;
     margin-left: 0;
     cursor: pointer;
-    color: #ffffff;
     vertical-align: top;
-    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     line-height: 21px;
     padding-left: 40px;
@@ -503,7 +491,6 @@ input[type="checkbox"]:checked + label::before{
     }
 
     .title-filter{
-        color: #ffffff;
         font-size: 16px;
     }
 
@@ -608,7 +595,6 @@ button.btn{
     background-color: transparent;   
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
-    color: #ffffff;
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
@@ -630,10 +616,8 @@ button.btn{
     }
 
     .sort-type{
-/*        float: left;*/
         margin-left: 165px;
         margin-right: 70px;
-        font-family: "PT Sans", "Arial", sans-serif;
         font-weight: 400;
         font-size: 12px;
     }
@@ -643,7 +627,6 @@ button.btn{
             margin-right: 30px;
             vertical-align: middle;
             text-decoration: none;
-            color: #000000;
             opacity: 0.3;
         }
 
@@ -740,7 +723,6 @@ button.btn{
     max-width: 160px;
     margin-right: 2px;
     vertical-align: top;
-    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     line-height: 21px;
 }
@@ -751,7 +733,6 @@ button.btn{
         padding: 3px 17px;
         background: #81b3d2;
         text-decoration: none;
-        font-family: "PT Sans", "Arial", sans-serif;
         font-weight: 700;
         color: #ffffff;
     }
@@ -797,7 +778,6 @@ button.btn{
             text-align: center;
             color: #666;
             background: #F2F2F2;
-            font-family: "PT Sans", "Arial", sans-serif;
             font-weight: 400;
             line-height: 21px;
         }
