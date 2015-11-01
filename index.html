@@ -42,7 +42,7 @@
             <div class="reason-row reason-row-image clearfix"> 
                 <div class="reason">
                     <h2 class="reason-title">Настоящий<br> городок</h2>
-                    <div class="reason-number">- №1 -</div>
+                    <div class="reason-number">&mdash;&nbsp;№1&nbsp;&mdash;</div>
                     <p class="reason-text">Седона - не атракцион для туристов,<br> там течет своя жизнь</p>
                 </div>
                 <figure class="reason-picture">
@@ -72,7 +72,7 @@
                 </figure>
                 <div class="reason">
                     <h2 class="reason-title">Там есть<br> мост дьявола</h2>
-                    <div class="reason-number">- №2 -</div>
+                    <div class="reason-number">&mdash;&nbsp;№2&nbsp;&mdash;</div>
                     <p class="reason-text">Да, по нему можно пройти!<br> Если конечно вы осмелитесь</p>
                 </div>
             </div>
@@ -80,19 +80,19 @@
             <div class="reason-row reason-row-gray">
                 <div class="reason">
                     <h2 class="reason-title">Небольшая<br> площадь</h2>
-                    <div class="reason-number">- №3 -</div>
+                    <div class="reason-number">&mdash;&nbsp;№3&nbsp;&mdash;</div>
                     <p class="reason-text">Все достопримеча-<br> тельности находятся очень близко</p>
                 </div>
                 
                 <div class="reason">
                     <h2 class="reason-title">Красивая<br> дорога</h2>
-                    <div class="reason-number">- №4 -</div>
+                    <div class="reason-number">&mdash;&nbsp;№4&nbsp;&mdash;</div>
                     <p class="reason-text">Ехать в седону из Лас-Вегаса совсем<br> не скучно!</p>
                 </div>
                 
                 <div class="reason">
                     <h2 class="reason-title">Мало<br> туристов</h2>
-                    <div class="reason-number">- №5 -</div>
+                    <div class="reason-number">&mdash;&nbsp;№5&nbsp;&mdash;</div>
                     <p class="reason-text">Большинство едет в Гранд Каньон<br> и толпится там</p>
                 </div>
             </div>
@@ -105,9 +105,7 @@
         </div>
         
         <div class="map">
-            <div class="map-canvas">
-                <img class="img-map" alt="Карта" src="img/map.jpg" width="1200" height="593">
-            </div>
+            <div class="map-canvas" id="map-canvas"></div>
             
             <footer class="footer">
                 <a href="#" class="footer-hashtag">#visitsedona</a>
@@ -149,5 +147,7 @@
             <button class="btn" type="submit">Найти</button>
         </form>
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
