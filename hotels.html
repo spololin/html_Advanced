@@ -59,8 +59,10 @@
                             <label>до <input class="cost-input-out" type="text" name="cost-out" value="3000"></label>
                         </div>
                         <div class="scale">
-                            <button class="scale-min" type="button"></button>
-                            <button class="scale-max" type="button"></button>
+                            <div class="range">
+                                <button class="scale-min" type="button"></button>
+                                <button class="scale-max" type="button"></button>
+                            </div>
                         </div>
                     </div>
                     <button class="btn" type="submit">Показать</button>
@@ -71,16 +73,16 @@
         <div class="hotels-header clearfix">
             <h2 class="hotels-find-count">Найдено: 3</h2>
 
+            <div class="sort">
+              <a class="icon-up-dir" href="#"></a>
+              <a class="icon-down-dir icon-active" href="#"></a>
+            </div>
+            
             <div class="sort-type">
               <div class="sort-title">Сортировка:</div>
               <a class="active-sort-type" href="#">по цене</a>
               <a href="#">по типу</a>
               <a href="#">по рейтингу</a>
-            </div>
-
-            <div class="sort">
-              <a class="icon-up-dir" href="#"></a>
-              <a class="icon-down-dir icon-active" href="#"></a>
             </div>
         </div> 
 
@@ -88,6 +90,11 @@
             <a class="photo-hotel" href="#">
                 <img src="img/hotels/hotel1.jpg" width="135" height="90" alt="Amara Resort &amp; Spa">
             </a>
+            
+            <div class="rating">
+                <div class="rating-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
+                <div class="rating-value">Рейтинг: 8,5</div>
+            </div>
             
             <div class="hotel-info">
                 <h2 class="hotel-title">
@@ -99,11 +106,6 @@
                 <div class="hotel-action">от 3500 р.
                     <a href="#" class="btn-order">Забронировать</a>
                 </div>
-            </div>
-            
-            <div class="rating">
-                <div class="rating-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
-                <div class="rating-value">Рейтинг: 8,5</div>
             </div>   
         </section>
         
@@ -111,6 +113,13 @@
             <a class="photo-hotel" href="#">
                 <img src="img/hotels/hotel2.jpg" width="135" height="90" alt="Desert Quail Inn">
             </a>
+            
+            <div class="rating">
+                <div class="rating-stars"><i class="icon-star"></i><i class="icon-star"></i></div>
+                <div class="rating-value">Рейтинг:
+                    <span>8,9</span>
+                </div>
+            </div>
             
             <div class="hotel-info">
                 <h2 class="hotel-title">
@@ -122,13 +131,6 @@
                 <div class="hotel-action">от 2000 р.
                     <a href="#" class="btn-order">Забронировать</a>
                 </div>
-            </div>
-            
-            <div class="rating">
-                <div class="rating-stars"><i class="icon-star"></i><i class="icon-star"></i></div>
-                <div class="rating-value">Рейтинг:
-                    <span>8,9</span>
-                </div>
             </div>    
         </section>
         
@@ -136,6 +138,13 @@
             <a class="photo-hotel" href="#">
                 <img src="img/hotels/hotel3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
             </a>
+            
+            <div class="rating">
+                <div class="rating-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
+                <div class="rating-value">Рейтинг:
+                    <span>9,2</span>
+                </div>
+            </div>
             
             <div class="hotel-info">
                 <h2 class="hotel-title">
@@ -147,14 +156,7 @@
                 <div class="hotel-action">от 4000 р.
                     <a href="#" class="btn-order">Забронировать</a>
                 </div>
-            </div>
-            
-            <div class="rating">
-                <div class="rating-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
-                <div class="rating-value">Рейтинг:
-                    <span>9,2</span>
-                </div>
-            </div>     
+            </div>    
         </section>
         
         <footer class="footer">
