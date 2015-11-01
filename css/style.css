@@ -1,12 +1,12 @@
 /*  Правила центрирования сайта
 -----------------------------------------------*/
 body{
-    background: #f2f2f2;
     font-family: "PT Sans", "Arial", serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 26px;
+    background: #f2f2f2;
     color: #000000;
 }
 
@@ -110,6 +110,7 @@ body{
         width: 33.33%;
         font-size: 0px;
         text-align: center;
+        vertical-align: middle;
     }
 
         .footer-socials a{
@@ -186,7 +187,6 @@ body{
 -----------------------------------------------*/
 .promo{
     position: relative;
- 
     min-height: 508px;
     background: url("../img/promo_img.jpg") no-repeat 50% 30%;
     background-size: cover;
@@ -306,20 +306,24 @@ body{
 
 .reason-row-image .reason-picture{
     float: right;
+    width: 66.666666%;
 }
 
 .reason-row-image .reason{
     float: left;
     color: #ffffff;
+    width: 33.333333%;
 }
 
 .reason-row-image-invert .reason{
     float: right;
     color: #ffffff;
+    width: 33.333333%;
 }
 
 .reason-row-image-invert .reason-picture{
     float: left;
+    width: 66.666666%;
 }
 
     .reason-picture{
@@ -331,6 +335,7 @@ body{
         padding: 0;
         overflow: hidden;
         font-size: 14px;
+        vertical-align: top;
     }
 
         .reason-picture img{
@@ -419,6 +424,7 @@ body{
 
 .filter-items{
     float: left;
+    min-width: 132px;
     box-sizing: border-box;
     margin: 0;
     margin-right: 30px;
@@ -669,6 +675,7 @@ button.btn{
 
 .sort{
     float: right;
+    width: 50px;
 }
 
     .sort a{
@@ -677,6 +684,7 @@ button.btn{
         font-size: 23px;
         text-align: right;
         text-decoration: none;
+        vertical-align: top;
     }
     
     .icon-up-dir:hover::before, .icon-down-dir:hover::before{
@@ -889,6 +897,7 @@ fieldset{
             width: 115px;
             font-size: 14px;
             line-height: 41px;
+            vertical-align: top;
         }
 
         .form .form-input {
