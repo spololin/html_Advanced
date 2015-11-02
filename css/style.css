@@ -108,7 +108,7 @@ body{
     .footer-socials{
         display: inline-block;
         width: 33.33%;
-        font-size: 0px;
+        font-size: 0;
         text-align: center;
         vertical-align: middle;
     }
@@ -140,15 +140,15 @@ body{
                 line-height: 48px;
             }
 
-                .footer-socials a.icon-twitter::before,
-                .footer-socials a.icon-facebook::before,
-                .footer-socials a.icon-youtube::before{
+                .footer-socials .icon-twitter::before,
+                .footer-socials .icon-facebook::before,
+                .footer-socials .icon-youtube::before{
                     color: #ffffff;
                 }
 
-                .footer-socials a.icon-twitter:active::before,
-                .footer-socials a.icon-facebook:active::before,
-                .footer-socials a.icon-youtube:active::before{
+                .footer-socials .icon-twitter:active::before,
+                .footer-socials .icon-facebook:active::before,
+                .footer-socials .icon-youtube:active::before{
                     opacity: 0.3;
                 }
 
@@ -188,7 +188,7 @@ body{
 .promo{
     position: relative;
     min-height: 508px;
-    background: url("../img/promo_img.jpg") no-repeat 50% 30%;
+    background: #ddebf4 url("../img/promo_img.jpg") no-repeat 50% 30%;
     background-size: cover;
 }
 
@@ -292,11 +292,6 @@ body{
                     font-weight: 400;
                     line-height: 21px;
                 }
-
-        .reason-image .reason-text{
-            font-weight: 400;
-            line-height: 21px;
-        }
 
         .reason-text{
             font-weight: 400;
@@ -415,7 +410,7 @@ body{
 }
 
     .hotels-filters form{
-        font-size: 0px;
+        font-size: 0;
     }
 
         .hotel-filters h2{
@@ -437,7 +432,6 @@ body{
     }
 
     .filter-items h2{
-        font-weight: 700;
         font-size: 16px;
         line-height: 21px;
     }
@@ -467,7 +461,7 @@ input[type="checkbox"] + label{
         display: inline-block;
         vertical-align: top;
         font-size: 26px;
-        left: 0px;
+        left: 0;
     }
 
     input[type="checkbox"] + label:hover::before{
@@ -528,7 +522,7 @@ input[type="checkbox"]:checked + label::before{
             width: 2px;
             height: 22px;
             margin-left: -1px;
-            background: #fff;
+            background: #ffffff;
         }
 
     .cost-group label {
@@ -547,7 +541,7 @@ input[type="checkbox"]:checked + label::before{
         max-width: 50%;
         padding: 0;
         border: none;
-        color: #fff;
+        color: #ffffff;
         background-color: transparent;
     }
 
@@ -573,7 +567,7 @@ input[type="checkbox"]:checked + label::before{
         padding: 2px;
         box-shadow: 0 2px 0 0 rgba(0,0,0,.14);
         cursor: pointer;
-        border: 8px solid #fff;
+        border: 8px solid #ffffff;
         border-radius: 50%;
         outline: none;
         background: #ababab;
@@ -588,7 +582,7 @@ input[type="checkbox"]:checked + label::before{
         }
 
         .scale button.scale-max{
-            right: 0px;
+            right: 0;
         }
 
 button.btn{
@@ -597,7 +591,7 @@ button.btn{
     cursor: pointer;
     margin: 0 auto;
     margin-top: 33px;
-    border: 2px solid #FFF;
+    border: 2px solid #ffffff;
     border-radius: 3px;
     background-color: transparent;   
     font-family: "PT Sans", "Arial", sans-serif;
@@ -783,7 +777,7 @@ button.btn{
     }
 
         .rating-value{
-            padding: 3px 0px;
+            padding: 3px 0;
             text-align: center;
             color: #666;
             background: #F2F2F2;
@@ -859,20 +853,22 @@ fieldset{
     border: none;
 }
 
+/*
 .hidden{
     display: none;
 }
+*/
 
 /*  правила для формы поиска
 -----------------------------------------------*/
 .search-hotel-form {
-    display: block;
+    display: none;
     position: absolute;
     max-width: 568px;
     z-index: 1;
     left: 0;
     right: 0;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 0 7px 15px 0 rgba(0,0,0,.15);
     left: 50%;
     margin-left: -284px;
