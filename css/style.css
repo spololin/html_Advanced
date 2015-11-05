@@ -29,6 +29,7 @@ body{
         position: absolute;
         z-index: 1;
         left: 50%;
+        top: -15px;
         margin-left: -69px;
     }
 
@@ -854,16 +855,14 @@ fieldset{
     border: none;
 }
 
-/*
 .hidden{
     display: none;
 }
-*/
 
 /*  правила для формы поиска
 -----------------------------------------------*/
 .search-hotel-form {
-    display: none;
+/*    display: block;*/
     position: absolute;
     max-width: 568px;
     z-index: 1;
@@ -874,6 +873,12 @@ fieldset{
     left: 50%;
     margin-left: -284px;
 }
+/*
+
+    .search-hotel-form .hidden{
+        display: none;
+    }
+*/
 
 .form {
     margin: 55px;
