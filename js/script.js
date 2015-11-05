@@ -14,3 +14,12 @@ function initialize() {
   });
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+
+$(document).ready(function(){
+    function tra-ta-ta(){
+    $('#btn-search').click(function(evt) {
+        evt.preventDefault();
+        $('#search-form').toggleClass('hidden');
+    });
+        }
+});
