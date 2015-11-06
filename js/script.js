@@ -24,8 +24,7 @@ $(document).ready(function(){
     $('#search-form').submit(function() {
         $('.form-input').each(function() {
             if ($(this).val()=='') {
-                alert('Заполните правильно все поля формы!');
-                return false;
+                $(this).css('border', '2px solid red');
             }
         })
     })
