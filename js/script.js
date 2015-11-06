@@ -16,11 +16,18 @@ google.maps.event.addDomListener(window,'load',initialize);
 $(document).ready(function(){
     $('#btn-search').click(function(evt) {
         evt.preventDefault();
-//        $('#search-form').toggleClass('hidden');
-        if ($('#search-form').is(':hidden')) {
-  		    $('#search-form').slideDown(300);
-        } else {
-            $('#search-form').slideUp(300);
-        }
-    });
+        $('#search-form').removeClass('hidden');
+        $('#search-form').toggleClass('popup-show');
+        $('#search-form').toggleClass('popup-hide');
+    }); 
+    
+    $('#search-form').submit(function() {
+        $('.form-input').each(function() {
+            if ($(this).val()=='') {
+                alert('Заполните правильно все поля формы!');
+                return false;
+            }
+        })
+    })
 });
+
