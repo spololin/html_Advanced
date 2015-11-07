@@ -968,7 +968,7 @@ fieldset{
         padding: 5px 0;
         text-align: center;
         outline: medium none;
-        border: 2px solid #f2f2f2;
+/*        border: 2px solid #f2f2f2;*/
 
     }
 
@@ -1093,7 +1093,7 @@ fieldset{
   }
 }
 
-.popup-show {
+.form-show {
     -webkit-transform-origin: top;
         -ms-transform-origin: top;
             transform-origin: top;
@@ -1101,7 +1101,7 @@ fieldset{
             animation: show 0.75s forwards;
 }
 
-.popup-hide {
+.form-hide {
       -webkit-transform-origin: top;
           -ms-transform-origin: top;
               transform-origin: top;
