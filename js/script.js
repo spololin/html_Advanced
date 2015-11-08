@@ -22,9 +22,15 @@ $('.btn-search').click(function(evt) {
 }); 
 
 $('.search-hotel-form').submit(function() {
+    var $statusValidInput = false;
     $('.form-input').each(function() {
-        checkInputValue($(this));
-    }); 
+        if (!checkInputValue($(this))){
+            $statusValidInput = true;
+        }
+    });
+    if ($statusValidInput) {
+        return false;
+    }
 });
 
 $('.form-input').change(function(){
@@ -34,5 +40,6 @@ $('.form-input').change(function(){
 function checkInputValue(obj){
     if (obj.val()=='') {
         obj.css('border-color', 'red');
+        return false;
     };
 };
