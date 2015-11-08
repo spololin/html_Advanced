@@ -21,16 +21,12 @@ $('.btn-search').click(function(evt) {
     $('.search-hotel-form').toggleClass('form-hide');
 }); 
 
-$('.search-hotel-form').submit(function() {
-    var $statusValidInput = false;
+$('.search-hotel-form').submit(function(evt) {
     $('.form-input').each(function() {
-        if (!checkInputValue($(this))){
-            $statusValidInput = true;
-        }
+        if (checkInputValue($(this))){ 
+            evt.preventDefault();
+        };
     });
-    if ($statusValidInput) {
-        return false;
-    }
 });
 
 $('.form-input').change(function(){
@@ -40,6 +36,7 @@ $('.form-input').change(function(){
 function checkInputValue(obj){
     if (obj.val()=='') {
         obj.css('border-color', 'red');
-        return false;
+        $('.search-hotel-form').addClass('form-error');
+        return true;
     };
 };
