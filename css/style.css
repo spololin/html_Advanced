@@ -397,6 +397,7 @@ body{
 
     .map-canvas{
         min-height: 593px;
+        background-image: url("../img/map.png");
     }
 
 
