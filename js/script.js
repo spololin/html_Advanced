@@ -14,29 +14,42 @@ function initialize() {
 google.maps.event.addDomListener(window,'load',initialize);
 
 
-$('.btn-search').click(function(evt) {
-    evt.preventDefault();
-    $('.search-hotel-form').removeClass('hidden');
-    $('.search-hotel-form').toggleClass('form-show');
-    $('.search-hotel-form').toggleClass('form-hide');
-}); 
+var btnSearch = document.querySelector('.btn-search');
+var formSearch = document.querySelector('.search-hotel-form');
+var formInput = document.querySelector('.form-input');
 
-$('.search-hotel-form').submit(function(evt) {
-    $('.form-input').each(function() {
-        if (checkInputValue($(this))){ 
-            evt.preventDefault();
-        };
-    });
+btnSearch.addEventListener('click', function(evt) {
+    evt.preventDefault(); 
+    formSearch.classList.toggle('form-hide');
+    formSearch.classList.toggle('form-show');
 });
 
-$('.form-input').change(function(){
-    $(this).css('border-color', '#f2f2f2');
+window.addEventListener('keydown', function(evt) {
+if (evt.keyCode === 27) {
+  if (formSearch.classList.contains('form-show')) {
+    formSearch.classList.remove('form-show');
+    formSearch.classList.add('form-hide');
+    formSearch.classList.remove('form-error');
+  }
+}
 });
 
-function checkInputValue(obj){
-    if (obj.val()=='') {
-        obj.css('border-color', 'red');
-        $('.search-hotel-form').addClass('form-error');
-        return true;
+formSearch.addEventListener("submit", function(evt) {
+    var formInputs = formSearch.querySelectorAll('.form-input');
+    var inputStatusError = false;
+    for(var i = 0; i < formInputs.length; i++) {
+        if(formInputs[i].value !== '') continue;
+        evt.preventDefault();
+        formInputs[i].focus();
+        inputStatusError = true;
+        formInputs[i].oninput = clearErrorState;
+        formInputs[i].style.borderColor='#ff0000';
+        formSearch.classList.add('form-error');
     };
+    if(inputStatusError) return;
+});
+
+function clearErrorState(){
+    this.style.borderColor='#f2f2f2';
+    this.oninput = null;
 };
