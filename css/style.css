@@ -1,12 +1,12 @@
 /*  Правила центрирования сайта
 -----------------------------------------------*/
 body{
-    font-family: "PT Sans", "Arial", serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 26px;
-    background: #f2f2f2;
+    background-color: #f2f2f2;
     color: #000000;
 }
 
@@ -15,7 +15,7 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     box-shadow: 0 -5px 15px 0 rgba(0,0,0,.2);
-    background: #ffffff;
+    background-color: #ffffff;
 }
 
 
@@ -87,7 +87,7 @@ body{
     padding: 30px 0;
     padding-top: 35px;
     font-size: 0;
-    background: rgba(254, 254, 254, 0.9);
+    background-color: rgba(254, 254, 254, 0.9);
 }
 
 .map .footer{
@@ -120,21 +120,17 @@ body{
             margin-right: 6px;
             width: 46px;
             height: 48px;
-            background: #81b3d2;
+            background-color: #81b3d2;
             vertical-align: middle;
             text-decoration: none;
         }
 
-            .footer-socials a:hover,
-            .footer-socials a:hover,
-            .footer-socials a:hover{
-                background: #669ec0;
+            .footer-socials a:hover {
+                background-color: #669ec0;
             }
 
-            .footer-socials a:active,
-            .footer-socials a:active,
             .footer-socials a:active{
-                background: #5496bd;
+                background-color: #5496bd;
             }
 
             .footer-socials a::before{
@@ -172,7 +168,7 @@ body{
             margin: 4px 4px;
             vertical-align: middle;
             text-decoration: none;
-            background: transparent url("../img/sprites_ha.png") no-repeat;
+            background: transparent url("../img/sprites.png") no-repeat;
             background-position: 50% 0;
         }
 
@@ -201,7 +197,7 @@ body{
         right: 0;
         bottom: 0;
         height: 57px;
-        background: url("../img/promo_maska.png");
+        background-image: url("../img/promo_maska.png");
         background-size: 100% 57px;
     }
 
@@ -242,18 +238,18 @@ body{
         text-align: center;
         padding: 35px 4% 10px;
         box-sizing: border-box;
-        background: #81b3d2;
+        background-color: #81b3d2;
     }
 
 
     .reason-row .reason-image{
         min-height: 330px;
-        background: #ffffff;
+        background-color: #ffffff;
     }
 
         .reason-image{
             position: relative;
-            background: #ffffff;
+            background-color: #ffffff;
         }
 
             .reason-image::before {
@@ -264,19 +260,19 @@ body{
                 width: 75px;
                 height: 76px;
                 margin-left: -38px;
-                background: transparent url("../img/sprites_advices.png") no-repeat;
+                background: transparent url("../img/sprites.png") no-repeat;
             }
 
                 .reason-image-home::before {
-                    background-position: 0 0;
+                    background-position: 0 -152px;
                 }
 
                 .reason-image-hamburger::before {
-                    background-position: 0 -88px;
+                    background-position: 0 -242px;
                 }
 
                 .reason-image-gift::before {
-                    background-position: 0 -182px;
+                    background-position: 0 -337px;
                 }
         
 .reason-row .reason-title{
@@ -343,7 +339,7 @@ body{
         }
 
 .reason-row-gray .reason{
-    background: #eeeeee;
+    background-color: #eeeeee;
     color:#000000;
     padding-top: 28px;
 }
@@ -373,7 +369,7 @@ body{
     position: relative;
     display: block;
     margin: 0 auto;
-    background: #766357;
+    background-color: #766357;
     padding: 30px 0;
     margin-top: 50px;
     text-decoration: none;
@@ -383,11 +379,11 @@ body{
 }
 
     .btn-search:hover{
-        background: #604e43;
+        background-color: #604e43;
     }
 
     .btn-search:active{
-        background: #503e33;
+        background-color: #503e33;
         color: rgba(255,255,255,0.3);
     }
 
@@ -397,7 +393,7 @@ body{
 
     .map-canvas{
         min-height: 593px;
-        background-image: url("../img/map.png");
+        background: #ffffff url("../img/map.png");
     }
 
 
@@ -407,7 +403,7 @@ body{
     position: relative;
     max-height: 217px;
     padding: 15px 6% 5px;
-    background: transparent url("../img/bg_hotels_filters.jpg") no-repeat 0 50%;
+    background: #6c95bc url("../img/bg_hotels_filters.jpg") no-repeat 0 50%;
     background-size: cover;
     color: #ffffff;
 }
@@ -524,7 +520,7 @@ input[type="checkbox"]:checked + label::before{
             width: 2px;
             height: 22px;
             margin-left: -1px;
-            background: #ffffff;
+            background-color: #ffffff;
         }
 
     .cost-group label {
@@ -551,7 +547,7 @@ input[type="checkbox"]:checked + label::before{
         position: relative;
         margin: 20px 0;
         height: 2px;
-        background: rgba(255,255,255,.3);
+        background-color: rgba(255,255,255,.3);
     }
 
         .range{
@@ -560,7 +556,7 @@ input[type="checkbox"]:checked + label::before{
             bottom: 0;
             left: 0;
             right: 14%;
-            background: #ffffff;
+            background-color: #ffffff;
         }
 
     .scale button{
@@ -572,11 +568,11 @@ input[type="checkbox"]:checked + label::before{
         border: 8px solid #ffffff;
         border-radius: 50%;
         outline: none;
-        background: #ababab;
+        background-color: #ababab;
     }
 
         .scale button:hover {
-            background: #1c4f80;
+            background-color: #1c4f80;
         }
 
         .scale button.scale-min{
@@ -736,31 +732,31 @@ button.btn{
         display: block;
         margin-top: 15px;
         padding: 3px 17px;
-        background: #81b3d2;
+        background-color: #81b3d2;
         text-decoration: none;
         font-weight: 700;
         color: #ffffff;
     }
 
         .hotel-action a.btn:hover{
-            background: #669ec0;
+            background-color: #669ec0;
         }
 
         .hotel-action a.btn:active{
-            background: #5496bd;
+            background-color: #5496bd;
             color: rgba(255, 255, 255, 0.3);
         }
 
         .hotel-action a.btn-order{
-            background: #766357;
+            background-color: #766357;
         }
 
         .hotel-action a.btn-order:hover{
-            background: #604e43;
+            background-color: #604e43;
         }
 
         .hotel-action a.btn-order:active{
-            background: #503e33;
+            background-color: #503e33;
             color: rgba(255, 255, 255, 0.3);
         }
 
@@ -782,7 +778,7 @@ button.btn{
             padding: 3px 0;
             text-align: center;
             color: #666;
-            background: #F2F2F2;
+            background-color: #F2F2F2;
             font-weight: 400;
             line-height: 21px;
         }
@@ -823,17 +819,17 @@ button.btn{
     margin-left: .2em;
 }
  
-.icon-facebook:before { content: '\66'; } /* 'f' */
-.icon-twitter:before { content: '\74'; } /* 't' */
-.icon-up-dir:before { content: '\25b2'; color: #cccccc; } /* '▲' */
-.icon-down-dir:before { content: '\25bc'; color: #cccccc; } /* '▼' */
-.icon-star:before { content: '\2605'; color: #81b3d2; font-size: 17px; } /* '★' */
-.icon-check-off:before { content: '\2610'; } /* '☐' */
-.icon-check-on:before { content: '\2611'; } /* '☑' */
-.icon-calendar:before { content: '\e800'; } /* '' */
-.icon-plus:before { content: '\e801'; } /* '' */
-.icon-minus:before { content: '\e802'; } /* '' */
-.icon-youtube:before { content: '\f39e'; } /* '' */
+.icon-facebook:before { content: "\66"; } /* 'f' */
+.icon-twitter:before { content: "\74"; } /* 't' */
+.icon-up-dir:before { content: "\25b2"; color: #cccccc; } /* '▲' */
+.icon-down-dir:before { content: "\25bc"; color: #cccccc; } /* '▼' */
+.icon-star:before { content: "\2605"; color: #81b3d2; font-size: 17px; } /* '★' */
+.icon-check-off:before { content: "\2610"; } /* '☐' */
+.icon-check-on:before { content: "\2611"; } /* '☑' */
+.icon-calendar:before { content: "\e800"; } /* '' */
+.icon-plus:before { content: "\e801"; } /* '' */
+.icon-minus:before { content: "\e802"; } /* '' */
+.icon-youtube:before { content: "\f39e"; } /* '' */
 
 
 h1{
@@ -859,26 +855,26 @@ fieldset{
     display: none;
 }
 
+input[type="text"]:focus,
+input[type="date"]:focus,
+.btn:focus { 
+    outline: none; 
+}
+
+
 /*  правила для формы поиска
 -----------------------------------------------*/
 .search-hotel-form {
-/*    display: block;*/
     position: absolute;
     max-width: 568px;
     z-index: 1;
     left: 0;
     right: 0;
-    background: #ffffff;
+    background-color: #ffffff;
     box-shadow: 0 7px 15px 0 rgba(0,0,0,.15);
     left: 50%;
     margin-left: -284px;
 }
-/*
-
-    .search-hotel-form .hidden{
-        display: none;
-    }
-*/
 
 .form {
     margin: 55px;
@@ -912,7 +908,7 @@ fieldset{
             line-height: 24px;
             padding: 8px;
             padding-right: 38px;
-            background: #f2f2f2;
+            background-color: #f2f2f2;
             border: 2px solid #f2f2f2;
         }
 
@@ -967,9 +963,6 @@ fieldset{
         width: 38px;
         padding: 5px 0;
         text-align: center;
-        outline: medium none;
-/*        border: 2px solid #f2f2f2;*/
-
     }
 
     .counter button {
@@ -979,7 +972,7 @@ fieldset{
         border: none;
         outline: none;
         color: #a9a9a9;
-        background: #f2f2f2;
+        background-color: #f2f2f2;
     }
 
         .counter button::before {
@@ -1008,7 +1001,7 @@ fieldset{
     width: 100%;
     margin-top: 24px;
     padding: 16px;
-    background: #81b3d2;
+    background-color: #81b3d2;
     border: none;
     font-size: 21px;
     line-height: 26px;
@@ -1017,11 +1010,11 @@ fieldset{
 }
 
     .form .btn:hover{
-        background: #669ec0;
+        background-color: #669ec0;
     }
 
     .form .btn:active{
-        background: #5496bd;
+        background-color: #5496bd;
         color: rgba(255, 255, 255, 0.3);
     }
 
