@@ -401,7 +401,6 @@ body{
 -----------------------------------------------*/
 .hotels-filters{
     position: relative;
-    max-height: 217px;
     padding: 15px 6% 5px;
     background: #6c95bc url("../img/bg_hotels_filters.jpg") no-repeat 0 50%;
     background-size: cover;
@@ -419,7 +418,7 @@ body{
 
 .filter-items{
     float: left;
-    min-width: 132px;
+    max-width: 132px; 
     box-sizing: border-box;
     margin: 0;
     font-size: 14px;
